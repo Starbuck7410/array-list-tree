@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+
+gcc src/* -o run.bin
+
+./run.bin
