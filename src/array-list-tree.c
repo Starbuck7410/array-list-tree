@@ -81,6 +81,7 @@ int add_element_to_alt(alt_T * alt, size_t index, int32_t value){
     if(index < alt->array_length){
         element_T * element = traverse_alt(alt, index);
         int index_in_element = index % alt->array_length;
+        printf("Add - Element address is %llx\n", element);
         element->data[index_in_element] = value;
         return 0;
     }
